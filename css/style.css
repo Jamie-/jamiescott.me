@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+
+/* https://coolors.co/1fcbf2-17202d-ffffff-aaaaaa-ff6600 */
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #aaa;
+    background: #17202D;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    transform: translate(0, -50%);
+    color: #fff;
+}
+
+/* Header Style */
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 120px;
+    margin: 30px;
+    color: #FF6600;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(315deg, #FF6600, #FF6600, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 20px;
+}
+
+h2 span {
+    color: #1FCBF2;
+    /* If webkit */
+    background: -webkit-linear-gradient(left, #FF0000, #FF6600, #FFFF00, #00FF00, #1FCBF2, #8000FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Icon Style */
+nav {
+    width: 100%;
+    margin-top: 80px;
+}
+
+/* Footer */
+.footer {
+    height: 40px;
+    text-align: center;
+    color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

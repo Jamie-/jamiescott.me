@@ -1,0 +1,92 @@
+/* Whole page fade */
+#fade {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Icon Styles */
+
+.icon-wrap {
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px 20px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: #1FCBF2;
+}
+
+.icon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.icon:before {
+    font-size: 48px;
+    line-height: 90px;
+}
+
+/* Icon Animations */
+
+.icon-effect .icon {
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition: background 0.3s, color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
+}
+
+.icon-effect .icon:hover {
+    background: #1FCBF2;
+    color: #FFFFFF;
+}
